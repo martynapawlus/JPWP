@@ -1,2 +1,3 @@
 # JPWP
-Zadania dla uczestników zajęć środowych
+Zadanie 1.
+Zadanie 2.
