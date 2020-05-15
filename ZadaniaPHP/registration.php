@@ -23,9 +23,12 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     
     //TODO odpowiednio sprawdź czy hasła się zgadzają
     if(($name_check == true) && ($surname_check == true) && ($email_check == true)){
-        $query="INSERT INTO `registration`(`name`, `surname`, `email`, `password`) VALUES ('$name', '$surname', '$email', '$password1')";
-        
-        if(mysqli_query($conn, $query)){
+        $query="INSERT INTO `registration`(`name`, `surname`, `email`, `password`) VALUES (?,?,?,?)";
+        $stmt = mysqli_prepare($conn, $query);
+        mysqli_stmt_bind_param($stmt, 'ssss', $name, $surname, $email, $password1);
+        mysqli_stmt_execute($stmt);
+
+        if(mysqli_stmt_affected_rows($stmt) == 1) {
             echo("registered successfully");
         }else{
             echo("Error in registration");
