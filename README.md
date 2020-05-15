@@ -25,5 +25,5 @@ CREATE TABLE `registration` (
 # Zadanie 2.
 Twoim zadaniem, będzie obsługa panelu do logowania.  
   2.a) Stwórz plik login.php i napisz kod, który wykonuje odpowiednie zapytanie do bazy danych. W przypadku niepowodzenia, poinformuj o tym użytkownika, jeżeli logowanie przebiegnie poprawnie użytkownik powinien zobaczyć informację "Hello <imię_użytkownika>!".  
-  Podpowiedź: Dla zapytania SELECT funkcja mysqli_fetch_array($result, MYSQLI_ASSOC) zwraca tablicę klucz:STRING, z której w łatwy sposób możesz wyszukać zmiennych (przykład: $row['email']).  
+  Podpowiedź: Dla zapytania SELECT należy użyć funkcji mysqli_stmt_bind_result($stmt, $name) oraz mysqli_stmt_fetch($stmt).
   2.b) Napisz obsługę przycisku buttonLogin, po którego kliknięciu wywołasz napisany przez siebie kod login.php. Skorzystaj z klasy BackgroundTask i sprawdź jakie argumenty przyjmuje metoda doInBackground(). Pamiętaj, że jest to zadanie odtwórcze i możesz zainspirować się obsługą przycisku z klasy MainActivity :).
