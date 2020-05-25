@@ -1,16 +1,16 @@
 # JPWP
 Zanim zaczniesz należy urochomić server apache oraz mysql, za pomocą którego będziesz mógł korzystać z bazy danych.  
 Jeżeli korzystasz, z aplikacji XAMPP Server, postępuj zgodnie z krokami:  
-Dla systemu Windows:  
-1. Uruchom serwer Apache oraz MySQL klikając przycisk start. (Przycisk Admin przy MySQL prowadzi do phpmyadmin)
-2. W folderze xampp/htdocs utwórz folder JPWP, tutaj będziesz zamieszczać wszystkie pliki .php.  
-Dla systemu macOS:  
-1. W zakładce general kliknij przycisk Start. 
-2. W zakładce Network zezwól na połączenie localhost:8080 -> 80 (Over SSH)
-3. W zakładce Volumes kliknij przycisk Mount
-4. Upewnij się, że w zakładce Services Apache oraz Mysql są włączone.
-5. W folderze lampp/htdocs utwórz folder JPWP, tutaj będziesz zamieszczać wszystkie pliki .php.  
-Dla systemu Linux:  
+**Dla systemu Windows:**  
+* Uruchom serwer Apache oraz MySQL klikając przycisk start. (Przycisk Admin przy MySQL prowadzi do phpmyadmin).
+* W folderze xampp/htdocs utwórz folder JPWP, tutaj będziesz zamieszczać wszystkie pliki .php.
+**Dla systemu macOS:**   
+* W zakładce general kliknij przycisk Start. 
+* W zakładce Network zezwól na połączenie localhost:8080 -> 80 (Over SSH)
+* W zakładce Volumes kliknij przycisk Mount
+* Upewnij się, że w zakładce Services Apache oraz Mysql są włączone.
+* W folderze lampp/htdocs utwórz folder JPWP, tutaj będziesz zamieszczać wszystkie pliki .php.  
+**Dla systemu Linux:**   
 Zachęcam zainstalowanie Apache oraz MySQL z poziomu konsoli, a następnie w folderze public_html lub innym określonym jako katalog publiczny utworzyć folder JPWP.  
 UWAGA: Wszystkie klasy obsługujące kod w Javie znajdują się pod adresem app/src/main/java/com/example/jpwp.  
 # Zadanie 1.
