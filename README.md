@@ -3,7 +3,7 @@ Zanim zaczniesz należy urochomić server apache oraz mysql, za pomocą którego
 Jeżeli korzystasz, z aplikacji XAMPP Server, postępuj zgodnie z krokami:  
 **Dla systemu Windows:**  
 * Uruchom serwer Apache oraz MySQL klikając przycisk start. (Przycisk Admin przy MySQL prowadzi do phpmyadmin).
-* W folderze xampp/htdocs utwórz folder JPWP, tutaj będziesz zamieszczać wszystkie pliki .php.
+* W folderze xampp/htdocs utwórz folder JPWP, tutaj będziesz zamieszczać wszystkie pliki .php.  
 **Dla systemu macOS:**   
 * W zakładce general kliknij przycisk Start. 
 * W zakładce Network zezwól na połączenie localhost:8080 -> 80 (Over SSH)
