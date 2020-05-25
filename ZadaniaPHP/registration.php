@@ -1,4 +1,6 @@
 <?php
+
+// upewnij się, czy dane się zgadzają z tymi, które znajdziesz w zakładce Konta użytkowników na localhost/phpmyadmin
 $servername="localhost";
 $mysql_user="root";
 $mysql_pass="";
