@@ -39,8 +39,9 @@ public class BackgroundTask extends AsyncTask<String, String, String> {
 
 
         String type = strings[0];
-        String loginURL = "http://10.0.2.2:8080/JPWP/login.php";        //adres 10.0.2.2 jest to adres twojego komputera widziany z emulatora
-        String regURL = "http://10.0.2.2:8080/JPWP/registration.php";
+        // "http://10.0.2.2:8080/JPWP/login.php" jeśli komunikacja odbywa się przez port 8080
+        String loginURL = "http://10.0.2.2/JPWP/login.php";        //adres 10.0.2.2 jest to adres twojego komputera widziany z emulatora
+        String regURL = "http://10.0.2.2/JPWP/registration.php";  //jeśli adres 10.0.2.2 nie zadziała wpisz adres ip swojego komputera
 
         if (type.equals("registration")) {
             String name = strings[1];
