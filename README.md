@@ -24,7 +24,10 @@ CREATE TABLE `registration` (
       `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL 
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;  
     
-  1.a) Uzupełnij brakujące wyrażenia regularne znajdujące się w pliku registration.php. Ze zmiennymi email (konieczność znaku "@" i "." w mailu) oraz name (same litery, użytkownik może podać więcej niż jedno imię) nie powinieneś mieć problemów, w zmiennej surname chcemy, aby użytkownik podał TYLKO jedno słowo, które może zawierać w sobie "-".  
+  1.a) Uzupełnij brakujące wyrażenia regularne znajdujące się w pliku registration.php.  
+  Zmienna email - rozpoczyna się od identyfikatora użytkownika następnie @, domena, "." i końcówka domeny.  
+  Zmienna name - same litery, użytkownik może podać więcej niż jedno imię.  
+  Zmienna surname - chcemy, aby użytkownik podał TYLKO jedno słowo, które może zawierać w sobie "-".  
   PODPOWIEDŹ: Skorzystaj ze strony https://regexr.com/, aby sprawdzić, czy wyrażenia spełniają swoje zadanie.  
   1.b) Napisz odpowiednią instrukcję warunkową, która sprawdza, czy podane hasła są takie same, jeśli nie, poinformuj użytkownika np. funkcją "echo", że podane hasła się różnią.  
   
